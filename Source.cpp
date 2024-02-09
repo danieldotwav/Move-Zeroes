@@ -24,6 +24,40 @@ int main() {
 	moveZeroes(case3);
 	printVector(case3);
 
+	// Case 4: All zeroes
+	vector<int> case4 = { 0, 0, 0, 0 };
+	moveZeroes(case4);
+	printVector(case4);
+
+	// Case 5: Mixed zeroes and non-zeroes
+	vector<int> case5 = { 1, 0, 2, 0, 3, 0, 4 };
+	moveZeroes(case5);
+	printVector(case5);
+
+	// Case 6: All non-zeroes
+	vector<int> case6 = { 5, 1, 3, 7 };
+	moveZeroes(case6);
+	printVector(case6);
+
+	// Case 7: Zeroes at the end
+	vector<int> case7 = { 1, 2, 3, 0, 0 };
+	moveZeroes(case7);
+	printVector(case7);
+
+	// Case 8: Single non-zero element
+	vector<int> case8 = { 1 };
+	moveZeroes(case8);
+	printVector(case8);
+
+	// Case 9: Zero in the middle
+	vector<int> case9 = { 1, 2, 0, 3, 4 };
+	moveZeroes(case9);
+	printVector(case9);
+
+	// Case 10: Alternating zeroes and non-zeroes
+	vector<int> case10 = { 0, 1, 0, 2, 0, 3, 0, 4, 0 };
+	moveZeroes(case10);
+	printVector(case10);
 
 	return 0;
 }
